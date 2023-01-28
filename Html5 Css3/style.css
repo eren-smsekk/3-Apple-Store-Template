@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header .top-header{
+    background-color: black;
+    padding: 10px 0; /*Yukarıdan aşağıya iç boşluk alıcak*/
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+header .container .box {
+    display: inline-block;
+    width: 48%;
+}
+
+header .container .box ul {
+    list-style: none;
+    padding: 0;
+}
+
+header .container .box ul li{
+    display: inline;
+    margin: 0 10px;
+}
+
+header .container .box ul li:hover{
+    background: red;
+    cursor: pointer;
+}
+
+/*İlk Elemana Ulaşırız :first-child*/
+header .container .box ul li:first-child{
+    margin: 0 10px 0 0;
+}
+
+/*Son Elemana Ulaşırız :last-child*/
+/* header .container .box ul li:last-child{
+    margin: 0 0 0 10px;
+    color: blue;
+} */
+
+/*Herhangi bir elementin index numarası ile ulaşabiliriz :nth-child(2)*/
+/* header .container .box ul li:nth-child(3){
+    margin: 0 0 0 20px;
+    color: red;
+} */
+
+header .container .box ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+header .container .box:last-child {
+    text-align: right;
+}
+
+header .container .box i{
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    
+}
+
+header .bottom-header {
+    background-color: rgba(222,222,222);
+}
+
+header .bottom-header .container  .logoArea {
+    width: 15%;
+    float: left;
+}
+
+header .bottom-header .logoArea img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /*Görsel sığdırmak için kullandık*/
+    padding:  20px 0;
+}
+
+header .bottom-header .container .menuArea {
+    width: 84%;
+    display: inline-block;
+}
+
+.menuArea {
+    text-align: right;
+}
+
+.menuArea ul {
+    list-style: none;
+}
+
+.menuArea ul li {
+    display: inline-block;
+    padding: 30px 10px;
+}
+
+.menuArea ul li:hover {
+    background-color: black;
+    color: white;
+}
+
+.menuArea ul li:hover a{
+    color: white;
+}
+
+.menuArea ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+content .slider{
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+content .slider img{
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+}
+
+.slider .caption {
+    width: 500px;
+    margin: auto 0;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.slider .caption p {
+    font-size: 24px;
+}
+
+content .yeniUrun .box
+{
+    display: inline-block;
+    width: 48%;
+    vertical-align: middl;
+}
+
+content .yeniUrun .box img
+{
+       width: 100%;
+       object-fit: cover;
+}
+
+content .yeniUrun .box h2
+{
+       font-size: 32px;
+}
+
+content .yeniUrun .box p
+{
+       font-size: 20px;
+       padding-right: 100px;
+}
+
+content .yeniUrun .box a
+{
+       background-color: black;
+       color: white;
+       padding: 10px 20px;
+       text-decoration: none;
+       border-radius: 10px;
+       font-size: 20px;
+}
+
+.yeniUrun .box:last-child {
+    vertical-align: top;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+
+content .price-table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+content .price-table .price-box {
+    display: inline-block;
+    width: 29%;
+    text-align: center;
+    margin: 0 30px;
+}
+
+content .price-table .price-box img{
+    width: 300px;
+    height: auto;
+}
+
+content .price-table .price-box h3{
+    font-size: 30px;
+}
+
+content .price-table .price-box p{
+    font-size: 20px;
+}
+
+content .price-table .price-box .fiyat{
+    font-size: 34px;
+    font-weight: bold;
+    color: red;
+}
+
+content .price-table .price-box .fiyat span{
+    font-size: 14px;
+    color: red;
+}
+
+content .price-table .price-box a{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+content .price-table .price-box a:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+footer {
+    background: rgba(222,222,222);
+}
+
+footer .footer-box {
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+}
+footer .footer-box:first-child{
+    width: 20%;
+    padding-left: 190px;
+}
+footer .footer-box:last-child{
+    width: 34%;
+}
+footer .footer-box ul li{
+    text-align: center;
+    list-style: none;
+}
+
+footer .footer-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /*Görsel sığdırmak için kullandık*/
+    padding:  20px 0;
+    padding: 20px 0;
+}
+
+footer .footer-box ul {
+    font-size: 18px;
+    line-height: 19px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer .footer-box h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+footer .footer-box input[type=text]{
+    width: 64%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    color: white;
+    font-size: 16px;
+}
+
+footer .footer-box input[type=submit]{
+    width: 33%;
+    color: black;
+    font-size: 16px;
+}
+::placeholder {
+    color: red;
+    opacity: .3;
+}
+
+footer .footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid #c1c1c1;
+    text-align: center;
+}
+
+/*Mobil*/
+@media screen and (max-width: 768px) {
+    .top-header .container .box {
+        width: 100%;
+        text-align: center !important;
+    }
+    header .bottom-header .container .logoArea {
+        width: 100%;
+        text-align: center;
+    }
+    header .bottom-header .container .menuArea {
+        width: 100%;
+    }
+    .menuArea ul {
+        padding: 0;
+        margin: 0;
+    }
+    .menuArea ul li{
+        padding: 30px 8px;
+    }
+    .slider .caption {
+        width: 400px;
+        margin: auto 0;
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
+    
+}
